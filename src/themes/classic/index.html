@@ -32,6 +32,8 @@
             <%= config.strings.subtotal %> <%= cart.total({ format: true, currencyCode: true }) %>
         </div>
         <input class="minicart-submit" type="submit" value="<%= config.strings.button %>" data-test-processing="<%= config.strings.processing %>" />
+    
+         <input type=button value=' Continue Shopping ' onClick="window.opener.window.location.reload(true); window.self.close()" />
     </div>
     <input type="hidden" name="cmd" value="_cart" />
     <input type="hidden" name="upload" value="1" />
